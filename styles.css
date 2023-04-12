@@ -1,0 +1,101 @@
+/*ESTILOS MENU
+.navbar{
+    background-color: rgba(241, 232, 232, 0.986);
+    padding: 0.3rem;
+}
+*/
+/*FLEXBOX*/
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+/************HERO***********/
+
+/*.hero{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    padding: 80px;
+}
+*/
+.hero{
+    
+    padding: 80px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+header .navbar-collapse a{ /*Gracias a esto se puede cambiar*/
+    position: relative; /*Gracias a esto se puede cambiar la posición a las a de la nav*/
+}
+
+.carousel{
+    margin-top: 50px;
+}
+
+.hero{
+    width: 100%;
+    height: 550px;
+    top: 5500px;
+}
+
+
+.article-cel{
+    margin-top: 170px;
+}
+
+.form{
+    margin-top: 150px;
+}
+
+
+/*FIN HERO*/
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 70px;
+   
+}
+
+.article{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: rgba(39, 37, 37, 0.986);
+}
+
+/************* MEDIA QUERIES *************/
+@media (max-width: 800px) {
+    h1 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+}
+
+@media (max-width: 992px) { /*PARA QUE SEA RESPONSIVO*/
+    .hero {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        padding: 80px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .foto{
+        width: 100%;
+    }
+
+    .hero section h4 {
+        font-size: 6px
+    } 
+}
+
+
+/************* MEDIA QUERIES *************/
