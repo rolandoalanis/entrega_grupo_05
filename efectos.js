@@ -49,7 +49,7 @@ $(document).ready(function(){
         $('#btn-productos').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-        scrollTop: 900
+        scrollTop: 780
     }, 1500);
     });
 
