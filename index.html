@@ -25,400 +25,449 @@
 </head>
 
 <body>
-    <!--El container es el contenedor principal, en el irán todas las filas y columnas-->
-    <!--Con el container podermos centrar nuestra página-->
+  <!--El container es el contenedor principal, en el irán todas las filas y columnas-->
+  <!--Con el container podermos centrar nuestra página-->
 
-    <div class="container-expand"> <!--Inicio de Container puede ser fluid o expand para que quepa en la pantalla-->
+  <div class="container-expand"> <!--Inicio de Container puede ser fluid o expand para que quepa en la pantalla-->
 
-    <!--Las filas (row) son grupos horizontales de columnas -->
+  <!--Las filas (row) son grupos horizontales de columnas -->
 
-    <!-- Los tamaños en Bootstrap 5 son:
-        .col        Extra pequeño (Extra Small) - Smartphone Vertical   Menos de 576px
-        .col-sm     Pequeño (Small) - Smartphone Vertical               Mas de 576px y menos de 768px
-        .col-md     Mediano (Medium) - Tablets                          Mas de 768px y menos de 992px
-        .col-lg     Largo   (Large) - Computadoras                      Mas de 992px y menos de 1200px
-        .col-xl     Extra Largo (Extra Large) Computadoras              Mas de 1200px 
-        .col-xxl    Extra Extra Largo (Extra Extra Large) Televicores   Mas de 1400px 
-    -->
+  <!-- Los tamaños en Bootstrap 5 son:
+      .col        Extra pequeño (Extra Small) - Smartphone Vertical   Menos de 576px
+      .col-sm     Pequeño (Small) - Smartphone Vertical               Mas de 576px y menos de 768px
+      .col-md     Mediano (Medium) - Tablets                          Mas de 768px y menos de 992px
+      .col-lg     Largo   (Large) - Computadoras                      Mas de 992px y menos de 1200px
+      .col-xl     Extra Largo (Extra Large) Computadoras              Mas de 1200px 
+      .col-xxl    Extra Extra Largo (Extra Extra Large) Televicores   Mas de 1400px 
+  -->
 
-  <div class="row"> <!--Inicio de row-->
+<div class="row"> <!--Inicio de row-->
 
-  <div class="col"> <!--Inicio de Col-->
+<div class="col"> <!--Inicio de Col-->
 
-    
-
-  <!--INICIO NAVBAR-->
   
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark "> <!--sacamos lo siguiente: bg-body-tertiary-->
-      <div class="container-fluid"> 
-        <a class="navbar-brand" href="#"  > <img src="img/logo.png"  width="110" alt="" srcset=""> <srcset=""></a>
-        <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0"> <!--FLEXBOX --Cambié ESTO: me-auto mb-2 mb-lg-0-->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" id="">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" id="btn-acerca-de">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" id="btn-productos" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Precios</a>
-            </li>
-      
-            <li class="nav-item">
-              <a class="nav-link" href="#">Ventas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#" id="btn-contacto">Contacto</a>
+
+<!--INICIO NAVBAR-->
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark "> <!--sacamos lo siguiente: bg-body-tertiary-->
+    <div class="container-fluid"> 
+      <a class="navbar-brand" href="#"  > <img src="img/logo.png"  width="110" alt="" srcset=""> <srcset=""></a>
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0"> <!--FLEXBOX --Cambié ESTO: me-auto mb-2 mb-lg-0-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="btn-acerca-de">Acerca de</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="btn-productos" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Precios</a>
+          </li>
+    
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ventas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="btn-contacto">Contacto</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" 
+                href="#" 
+                id="submenuProductos"
+                role="button" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
+              Mas
+            </a>
+              <ul class="dropdown-menu" aria-labelledby="submenuProductos">
+                <li><a class="dropdown-item" href="#">Promociones</a></li>
+                <li><a class="dropdown-item" href="#">Novedades</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Reclamos</a></li>
+              </ul>
             </li>
             
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" 
-                  href="#" 
-                  id="submenuProductos"
-                  role="button" 
-                  data-bs-toggle="dropdown" 
-                  aria-expanded="false">
-                Mas
-              </a>
-                <ul class="dropdown-menu" aria-labelledby="submenuProductos">
-                  <li><a class="dropdown-item" href="#">Promociones</a></li>
-                  <li><a class="dropdown-item" href="#">Novedades</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Reclamos</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-            <!--Formulario de Búsqueda-->
-            <form class="d-flex" role="search">
-              <input  class="form-control me-2" 
-                      type="search" 
-                      placeholder="Escribe Aquí" 
-                      aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-      </div>
-    </nav>
-  </header>
-  <!--FINAL NAVBAR-->
+          </ul>
+          <!--Formulario de Búsqueda-->
+          <form class="d-flex" role="search">
+            <input  class="form-control me-2" 
+                    type="search" 
+                    placeholder="Escribe Aquí" 
+                    aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+    </div>
+  </nav>
+</header>
+<!--FINAL NAVBAR-->
 
-  <!--CAROUSEL-->
-    <div class="contenedor">
-      <div class="row">
-        <div class="col">
-          <div class="carousel slide carousel-fade" id="mi-carousel"  data-bs-ride="carousel"><!--data-bs-touch  No pueden mover-->
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <div class="carousel-caption">
-                
-                  <h5> Accesorios | Repuestos | Tecnología </h5>
-                      
-                </div>
-                <img class="img-fluid" src="img/carousel1.jpg" alt="">
-             </div>
-             <div class="carousel-item" data-bs-interval="3000">
+<!--CAROUSEL-->
+  <div class="contenedor">
+    <div class="row">
+      <div class="col">
+        <div class="carousel slide carousel-fade" id="mi-carousel"  data-bs-ride="carousel"><!--data-bs-touch  No pueden mover-->
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
               <div class="carousel-caption">
-                
-                <h5> Equipos Alta Gama </h5>
+              
+                <h5> Accesorios | Repuestos | Tecnología </h5>
                     
               </div>
-              
-              <img class="img-fluid" src="img/carousel2.jpg" alt="">
+              <img class="img-fluid" src="img/carousel1.jpg" alt="">
            </div>
            <div class="carousel-item" data-bs-interval="3000">
             <div class="carousel-caption">
-                
-                <h5> Conectate a tus redes con los últimos equipos </h5>
-                    
-              </div>
-            <img class="img-fluid" src="img/carousel3.jpg" alt="">
+              
+              <h5> Equipos Alta Gama </h5>
+                  
+            </div>
+            
+            <img class="img-fluid" src="img/carousel2.jpg" alt="">
          </div>
+         <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-caption">
+              
+              <h5> Conectate a tus redes con los últimos equipos </h5>
+                  
             </div>
-  
-            <!-- Controles  -->
+          <img class="img-fluid" src="img/carousel3.jpg" alt="">
+       </div>
+          </div>
+
+          <!-- Controles  -->
+          <button 
+                  class="carousel-control-prev"
+                  type="button" 
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide="prev"
+          >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button 
+                  class="carousel-control-next" 
+                  type="button" 
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide="next"
+          >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>  
+          </button>
+
+          <!-- Indicadores -->
+
+          <div class="carousel-indicators">
             <button 
-                    class="carousel-control-prev"
-                    type="button" 
-                    data-bs-target="#mi-carousel"
-                    data-bs-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-  
+                  type="button" 
+                  class="active" 
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide-to="0"
+                  aria-label="Slide1"
+            ></button>
             <button 
-                    class="carousel-control-next" 
-                    type="button" 
-                    data-bs-target="#mi-carousel"
-                    data-bs-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>  
-            </button>
-  
-            <!-- Indicadores -->
-  
-            <div class="carousel-indicators">
-              <button 
-                    type="button" 
-                    class="active" 
-                    data-bs-target="#mi-carousel"
-                    data-bs-slide-to="0"
-                    aria-label="Slide1"
-              ></button>
-              <button 
-                    type="button" 
-                    class="" 
-                    data-bs-target="#mi-carousel"
-                    data-bs-slide-to="1"
-                    aria-label="Slide2"
-              ></button>
-              <button 
-                    type="button" 
-                    class="" 
-                    data-bs-target="#mi-carousel"
-                    data-bs-slide-to="2"
-                    aria-label="Slide3"
-              ></button>
-            </div>
-  
+                  type="button" 
+                  class="" 
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide2"
+            ></button>
+            <button 
+                  type="button" 
+                  class="" 
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide3"
+            ></button>
           </div>
+
         </div>
       </div>
     </div>
-  <!--FIN DE CAROUSEL-->
+  </div>
+<!--FIN DE CAROUSEL-->
 
-  <!--HERO-->
-  <div class="hero d-flex align-items-center justify-content-center">
-    <section class="acerca-de" id="acerca-de">
-      <h1>Tienda de Celulares</h1>
-      <h4>Acá encontrarás todas las Marcas y Modelos para tu comodidad en el mundo de la Tecnología Celular</h4>
-      <button type="button" class="btn btn-primary">Get Start</button>
+<!--HERO-->
+<div class="hero d-flex align-items-center justify-content-center">
+  <section class="acerca-de" id="acerca-de">
+    <h1>Tienda de Celulares</h1>
+    <h4>Acá encontrarás todas las Marcas y Modelos para tu comodidad en el mundo de la Tecnología Celular</h4>
+    <button type="button" class="btn btn-primary">Get Start</button>
+    
+  </section>
+  <article>
+  <div class="foto">
+    <img src="img/phone_01.png" width="500" class="foto" alt="" >
+  </div>
+</article>
+</div>
+<!--FIN HERO-->
+
+<!--ARTICLE-->
+<div class="row py-7">
+    <div class="col border-bottom mb-4">
+      <div class="article-cel" id="productos">
+        <h2 class="article text-center">Selecciona tu Modelo</h2>
+      </div>
+    </div>
+  </div>
+<!--FIN DE ARTICLE-->
+
+<!-- MAIN -->
+<div class="main">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+        <div class="card text-center">
+          <div class="card-body">
+            <!--<div class="card-title">¡NUEVO!</div> -->
+            <p class="card-text">iPhone 13 Pro - 128 GB - Grafito</p>
+            <img class="card-img-top" src="img/card_01.jpg" alt="" >
+            
+            <h5 class="card-subtitle text-muted mb-2">$631.400</h5>
+            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            
+          </div>
+        </div>
+      </div>
       
-    </section>
-    <article>
-    <div class="foto">
-      <img src="img/phone_01.png" width="500" class="foto" alt="" >
-    </div>
-  </article>
-  </div>
-  <!--FIN HERO-->
-  
-  <!--ARTICLE-->
-  <div class="row py-7">
-      <div class="col border-bottom mb-4">
-        <div class="article-cel" id="productos">
-          <h2 class="article text-center">Selecciona tu Modelo</h2>
+      <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+        <div class="card text-center">
+          <div class="card-body">
+          <p class="card-text">Samsung Galaxy S23 - 8gb 256gb</p>
+            <img class="card-img-top" src="img/card_02.jpg" alt="" >
+            
+            <h5 class="card-subtitle text-muted mb-2">$485.999</h5>
+            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            
+          </div>
         </div>
       </div>
-    </div>
-  <!--FIN DE ARTICLE-->
 
-  <!-- MAIN -->
-  <div class="main">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
-          <div class="card text-center">
-            <div class="card-body">
-              <!--<div class="card-title">¡NUEVO!</div> -->
-              <p class="card-text">iPhone 13 Pro - 128 GB - Grafito</p>
-              <img class="card-img-top" src="img/card_01.jpg" alt="" >
-              
-              <h5 class="card-subtitle text-muted mb-2">$631.400</h5>
-              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
-              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
-              
-            </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+        <div class="card text-center">
+          <div class="card-body">
+          <p class="card-text">Motorola edge 30- - 128 GB azul</p>
+          <img class="card-img-top" src="img/card_03.jpg" alt="" >
+            
+            <h5 class="card-subtitle text-muted mb-2">$339.999</h5>
+            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            
           </div>
         </div>
-        
-        <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
-          <div class="card text-center">
-            <div class="card-body">
-            <p class="card-text">Samsung Galaxy S23 - 8gb 256gb</p>
-              <img class="card-img-top" src="img/card_02.jpg" alt="" >
-              
-              <h5 class="card-subtitle text-muted mb-2">$485.999</h5>
-              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
-              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
-          <div class="card text-center">
-            <div class="card-body">
-            <p class="card-text">Motorola edge 30- - 128 GB azul</p>
-            <img class="card-img-top" src="img/card_03.jpg" alt="" >
-              
-              <h5 class="card-subtitle text-muted mb-2">$339.999</h5>
-              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
-              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
-          <div class="card text-center">
-            <div class="card-body">
-            <p class="card-text">Xiaomi 12t Pro - 12gb Ram .dual Sim</p>
-            <img class="card-img-top" src="img/card_04.jpg" alt="" >
-              
-              <h5 class="card-subtitle text-muted mb-2">$339.999</h5>
-              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
-              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
-          <div class="card text-center">
-            <div class="card-body">
-            <p class="card-text">Apple iPhone 13 Pro Max (256 GB) - Plata</p>
-            <img class="card-img-top" src="img/card_05.jpg" alt="" >
-              
-              <h5 class="card-subtitle text-muted mb-2">$1.299.041</h5>
-              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
-              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
-              
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
-          <div class="card text-center">
-            <div class="card-body">
-            <p class="card-text">Samsung Galaxy A30 Sm-a305 32gb</p>
-            <img class="card-img-top" src="img/card_06.jpg" alt="" >
-              
-              <h5 class="card-subtitle text-muted mb-2">$44.999</h5>
-              <a href="#" class="btn btn-sm btn-primary">Comprar</a>
-              <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
-              
-            </div>
-          </div>
-        </div>
-
-        
       </div>
-  </div>
-  <!-- FIN DE MAIN -->
-  
-  <!--ASIDE así no se hace
-   <div class="container">
-    <div class="row d-flex justify-content-between">
-      <div class="col">
-   <div class="aside d-flex align-items-center justify-content-evenly mb-4">
-    <article class="col">
-      <div class="">
-        <img src="img/mujer.jpg" width="450" alt="" >
+
+      <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+        <div class="card text-center">
+          <div class="card-body">
+          <p class="card-text">Xiaomi 12t Pro - 12gb Ram .dual Sim</p>
+          <img class="card-img-top" src="img/card_04.jpg" alt="" >
+            
+            <h5 class="card-subtitle text-muted mb-2">$339.999</h5>
+            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            
+          </div>
+        </div>
       </div>
-    </article>
 
-    <section>
-      <div class="col">
-      <h1>Smartphone</h1>
-      <p class="lead">La comodidad de estar siempre comunicado y conectado con las personas.
-        Tener tu trabajo al alcance de un segundo.
-        Vivir la experiencia de la Fotografia como un profesional</p>
+      <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+        <div class="card text-center">
+          <div class="card-body">
+          <p class="card-text">Apple iPhone 13 Pro Max (256 GB) - Plata</p>
+          <img class="card-img-top" src="img/card_05.jpg" alt="" >
+            
+            <h5 class="card-subtitle text-muted mb-2">$1.299.041</h5>
+            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            
+          </div>
+        </div>
       </div>
-     </section>
 
-    </div>
-    </div>
-    </div>
-  </div>
-  -->
+      <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+        <div class="card text-center">
+          <div class="card-body">
+          <p class="card-text">Samsung Galaxy A30 Sm-a305 32gb</p>
+          <img class="card-img-top" src="img/card_06.jpg" alt="" >
+            
+            <h5 class="card-subtitle text-muted mb-2">$44.999</h5>
+            <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+            <a href="#" class="btn btn-sm btn-secondary">Detalles</a>
+            
+          </div>
+        </div>
+      </div>
 
-   <!--ASIDE-->
-
-   <div class="d-flex align-items-center justify-content-evenly">
-    <section>
-      <h1>Smartphone</h1>
-      <p class="lead">La comodidad de estar siempre comunicado y conectado con las personas.
-        Tener tu trabajo al alcance de un segundo.
-        Vivir la experiencia de la Fotografia como un profesional</p>
       
-    </section>
-    <article>
+    </div>
+</div>
+<!-- FIN DE MAIN -->
+
+<!--ASIDE así no se hace
+ <div class="container">
+  <div class="row d-flex justify-content-between">
+    <div class="col">
+ <div class="aside d-flex align-items-center justify-content-evenly mb-4">
+  <article class="col">
     <div class="">
       <img src="img/mujer.jpg" width="450" alt="" >
     </div>
   </article>
+
+  <section>
+    <div class="col">
+    <h1>Smartphone</h1>
+    <p class="lead">La comodidad de estar siempre comunicado y conectado con las personas.
+      Tener tu trabajo al alcance de un segundo.
+      Vivir la experiencia de la Fotografia como un profesional</p>
+    </div>
+   </section>
+
   </div>
+  </div>
+  </div>
+</div>
+-->
 
-  <!--FIN DE ASIDE-->
+<!--ASIDE-->
+  <div class="container">
+    <div class="aside">
 
-  <!--FORMULARIO-->
-  <div class="container ">
-    <div class="row mt-3 ">
-      <div class="col-12 d-flex justify-content-center">
-      <div class="col-8 col-md-6 col-sm-12 mb-5">
-        <form action="" id="contacto" class="form">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" placeholder="Escribe Aquí" id="nombre">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <h1>Smartphone</h1>
+          <p class="lead">La comodidad de estar siempre comunicado y conectado con las personas.
+            Tener tu trabajo al alcance de un segundo.
+            Vivir la experiencia de la Fotografia como un profesional</p>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-lg-6 mb-4">
+            <img src="img/mujer.jpg" width="400" alt="" >
+          </div>
+          
+        </div>
+          
+    </div>
+  </div>
+<!--FIN DE ASIDE-->
 
-          <label for="correo" class="form-label">Correo</label>
-          <input type="email" class="form-control" placeholder="correo@correo.com" id="correo">
-        </form>
+<!--Formulario-->
+ <div class="container">
+  <div class="row mt-3">
+    <div class="col">
+      <h2 class="text" id="formulario">CONTACTO</h2>
+      <form action="" id="contacto">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Acá va tu Nombre" id="nombre">
+          </div>
+
+          <div class="col-12 col-md-6 mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" placeholder="correo@correo.com" id="correo">
+          </div>
+        </div>
 
         <div class="row">
-          <div class="col-12 col-md-6 col-sm-12 mb-5">
+          <div class="col-12 col-md-6 mb-3">
             <label for="mensaje" class="form-label">Mensaje</label>
             <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+
+          <div class="col-12 col-md-6 mb-3">
+            <div class="row">
+              <div class="col-12 col-sm-6 mb-3">
+                <label class="form-label">Recibir Notificaciones</label>
+
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="retiro" id="si">
+                  <label for="si" class="form-check-label">Si</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" name="retiro" id="no">
+                  <label for="no" class="form-check-label">No</label>
+                </div>
+
+              </div>
+              <div class="col-12 col-sm-6 mb-3">
+                <label class="form-label">Elige:</label>
+                <select name="elige" id="elige" class="form-select">
+                  <option value="semanales">Semanales</option>
+                  <option value="mensuales">Mensuales</option>
+                  <option value="trimestrales">Trimestrales</option>
+                  <option value="nunca">Nunca</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>  
-    
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div>
+              <div class="form-check mb-3">
+                <input type="checkbox" name="terminos" id="terminos" class="form-check-input">
+                <label for="terminos" class="form-check-label">Acepto los terminos y condiciones</label>
+              </div>
+              <button type="submit" class="col-12 btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
-  <!--FIN DE FORMULARIO-->
- 
-  <!--FOOTER-->
-  <footer class="container">
-    <div class="row border-top py-5 justify-content-between align-items-center">
-      <div class="col-auto">
-        <h1 class="lead">On Celular</h1>
-        <a href="#" class="btn btn-link">Acerca de</a>
-        <a href="#" class="btn btn-link">Contacto</a>
-      </div>
-      <div class="col-auto">
-        <a href="#" class="btn btn-link">Subir</a>
+</div>
+<!--Fin de Formulario-->
+
+<!--Footer-->
+<div class="footer">
+  <div class="direccion d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+        
+          <a href="#"class="fa-brands fa-facebook"></a>
+          <p class="calle">Sobre Nosotros <br />Todos los Derechos Reservados | Política de Calidad</p>
+        </div>
+        <div class="col-md-4 logo">
+          <img src="img/logo.png" width="110px" alt="" class="logo">
+        </div>
       </div>
     </div>
-  </footer>
-  <!--FIN DE FOOTER-->
+  </div>
+</div>
 
 
 
-  </div> <!--Fin de Col-->
 
-  </div> <!--Finde row-->
+</div> <!--Fin de Col-->
 
-  </div> <!--Fin de Container-->
-    
-  <script src="dist/js/jquery-3.6.4.min.js"></script>
-  <script src="dist/js/bootstrap.bundle.min.js"></script>
-  <script src="efectos.js"></script>
-  <script src="parallax.js"></script>
+</div> <!--Finde row-->
+
+</div> <!--Fin de Container-->
+  
+<script src="dist/js/jquery-3.6.4.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+<script src="efectos.js"></script>
+<script src="parallax.js"></script>
 </body>
 </html>
