@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/1ee4c6e644.js" crossorigin="anonymous"></script>
 
     <!--LINK ESTILOS BOOTSTRAP-->
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
@@ -203,18 +206,21 @@
 <!--FIN DE CAROUSEL-->
 
 <!--HERO-->
-<div class="hero d-flex align-items-center justify-content-center">
-  <section class="acerca-de" id="acerca-de">
-    <h1>Tienda de Celulares</h1>
-    <h4>Acá encontrarás todas las Marcas y Modelos para tu comodidad en el mundo de la Tecnología Celular</h4>
-    <button type="button" class="btn btn-primary">Get Start</button>
-    
-  </section>
-  <article>
-  <div class="foto">
-    <img src="img/phone_01.png" width="500" class="foto" alt="" >
+<div class="container">
+
+  <div class="hero d-flex align-items-center justify-content-center">
+    <section class="acerca-de" id="acerca-de">
+      <h1>Tienda de Celulares</h1>
+      <h4>Acá encontrarás todas las Marcas y Modelos para tu comodidad en el mundo de la Tecnología Celular</h4>
+      <button type="button" class="btn btn-primary">Get Start</button>
+      
+    </section>
+    <article>
+      <div>
+        <img src="img/phone_01.png" width="500" class="foto" alt="" >
+      </div>
+    </article>
   </div>
-</article>
 </div>
 <!--FIN HERO-->
 
@@ -373,54 +379,57 @@
  <div class="container">
   <div class="row mt-3">
     <div class="col">
-      <h2 class="text" id="formulario">CONTACTO</h2>
-      <form action="" id="contacto">
-        <div class="row">
-          <div class="col-12 col-md-6 mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" placeholder="Acá va tu Nombre" id="nombre">
+      <div class="contacto">
+
+        <h2 class="text" id="formulario">CONTACTO</h2>
+        <form action="" id="contacto">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" placeholder="Acá va tu Nombre" id="nombre">
+            </div>
+            
+            <div class="col-12 col-md-6 mb-3">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" class="form-control" placeholder="correo@correo.com" id="correo">
+            </div>
           </div>
-
-          <div class="col-12 col-md-6 mb-3">
-            <label for="correo" class="form-label">Correo</label>
-            <input type="email" class="form-control" placeholder="correo@correo.com" id="correo">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6 mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
-          </div>
-
-          <div class="col-12 col-md-6 mb-3">
-            <div class="row">
-              <div class="col-12 col-sm-6 mb-3">
-                <label class="form-label">Recibir Notificaciones</label>
-
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="retiro" id="si">
-                  <label for="si" class="form-check-label">Si</label>
+          
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" class="form-control"></textarea>
+            </div>
+            
+            <div class="col-12 col-md-6 mb-3">
+              <div class="row">
+                <div class="col-12 col-sm-6 mb-3">
+                  <label class="form-label">Recibir Notificaciones</label>
+                  
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" name="retiro" id="si">
+                    <label for="si" class="form-check-label">Si</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="radio" class="form-check-input" name="retiro" id="no">
+                    <label for="no" class="form-check-label">No</label>
+                  </div>
+                  
                 </div>
-                <div class="form-check">
-                  <input type="radio" class="form-check-input" name="retiro" id="no">
-                  <label for="no" class="form-check-label">No</label>
+                <div class="col-12 col-sm-6 mb-3">
+                  <label class="form-label">Elige:</label>
+                  <select name="elige" id="elige" class="form-select">
+                    <option value="semanales">Semanales</option>
+                    <option value="mensuales">Mensuales</option>
+                    <option value="trimestrales">Trimestrales</option>
+                    <option value="nunca">Nunca</option>
+                  </select>
                 </div>
-
               </div>
-              <div class="col-12 col-sm-6 mb-3">
-                <label class="form-label">Elige:</label>
-                <select name="elige" id="elige" class="form-select">
-                  <option value="semanales">Semanales</option>
-                  <option value="mensuales">Mensuales</option>
-                  <option value="trimestrales">Trimestrales</option>
-                  <option value="nunca">Nunca</option>
-                </select>
               </div>
             </div>
           </div>
-        </div>
-
+          
         <div class="row">
           <div class="col-12 d-flex justify-content-center">
             <div>
@@ -438,18 +447,62 @@
 </div>
 <!--Fin de Formulario-->
 
+<!--Ubicación-->
+<div class="container">
+
+  <section class="ubicacion" id="ubicacion">
+    <div class="contenedor">
+      <h3 class="titulo">Ubicación</h3>
+      <div class="direccion">
+        <p class="calle">Calle Padre Vásquez 1546 <br/> Maipú 5525</p><br>
+        <p class="telefono">54+ 261 7226616</p>
+        <p class="correo">correo@tucorreo.com</p>
+      </div>
+      <div class="horarios">
+        <h5>Horarios</h5>
+        <p class="entre-semana">Lunes a Viernes <br> 7:00am - 21:00pm</p>
+        <p class="fin-semana">Sábados <br> 7:00am - 14:00pm</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+  <section class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53559.31107834028!2d-68.82611897151969!3d-32.96534432432616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0c960c574809%3A0x57621966b9559a27!2zTWFpcMO6LCBNZW5kb3ph!5e0!3m2!1ses-419!2sar!4v1681914219545!5m2!1ses-419!2sar" width="1600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!--Fin de Ubicación-->
+
 <!--Footer-->
 <div class="footer">
   <div class="direccion d-flex align-items-center justify-content-center">
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-        
-          <a href="#"class="fa-brands fa-facebook"></a>
+
           <p class="calle">Sobre Nosotros <br />Todos los Derechos Reservados | Política de Calidad</p>
         </div>
         <div class="col-md-4 logo">
           <img src="img/logo.png" width="110px" alt="" class="logo">
+          <div class="textos">
+            <a href="#">Acerca de</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="social">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6>Síguenos en nuestras redes:</h6>
+          <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
     </div>

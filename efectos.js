@@ -58,8 +58,8 @@ $(document).ready(function(){
         $('#btn-contacto').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-        scrollTop: 20000
-    }, 4000);
+        scrollTop: 2400
+    }, 2600);
     });
 
 
