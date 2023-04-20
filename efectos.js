@@ -49,7 +49,7 @@ $(document).ready(function(){
         $('#btn-productos').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-        scrollTop: 780
+        scrollTop: 650
     }, 1500);
     });
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
         $('#btn-contacto').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-        scrollTop: 2400
+        scrollTop: 2270
     }, 2600);
     });
 
